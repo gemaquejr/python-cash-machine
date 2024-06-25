@@ -20,4 +20,4 @@ O projeto visa explorar alguns cenários com fluxos condicionais, repetições e
 
 No diretório do projeto, execute o script:
 
-- `python cash.py`
+- `python3 cash.py`
