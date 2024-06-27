@@ -21,3 +21,15 @@ O projeto visa explorar alguns cenários com fluxos condicionais, repetições e
 No diretório do projeto, execute o script:
 
 - `python3 cash.py`
+
+## Funcionalidades
+
+O simulador de caixa eletrônico bancário permite ao usuário:
+
+- Depositar: Adicionar dinheiro à conta.
+- Sacar: Retirar dinheiro da conta, respeitando o limite de saldo, limite de saque e o número máximo de saques diários.
+- Extrato: Visualizar o histórico de transações e o saldo atual.
+- Nova conta: Criar uma nova conta bancária.
+- Listar contas: Listar todas as contas existentes.
+- Novo usuário: Criar um novo usuário.
+- Sair: Encerrar o uso do caixa eletrônico.
