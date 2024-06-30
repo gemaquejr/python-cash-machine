@@ -1,8 +1,18 @@
 # Cash Machine
 
-Essa aplicação é um simulador de caixa eletrônico feito em Python.
+Este é um projeto de simulador de caixa eletrônico desenvolvido em Python. O projeto permite a criação de clientes, abertura de contas correntes, depósitos, saques e visualização de extratos.
 
-O projeto visa explorar alguns cenários com fluxos condicionais, repetições e exceções. Implementando um simulador de caixa eletrônico bancário.
+O projeto é estruturado em classes Python para representar clientes, contas correntes, transações e histórico de transações. Utiliza herança e classes abstratas para manter o código organizado e reutilizável.
+
+### Classes Principais:
+
+Cliente: Representa um cliente com informações pessoais e lista de contas associadas.
+
+Conta: Classe base para contas correntes, com métodos para sacar, depositar e consultar saldo.
+
+ContaCorrente: Subclasse de Conta que adiciona limites específicos de saque.
+
+Transacao: Classe abstrata para representar transações, com subclasses como Deposito e Saque.
 
 ## 🚀 Tecnologia
 
@@ -26,10 +36,12 @@ No diretório do projeto, execute o script:
 
 O simulador de caixa eletrônico bancário permite ao usuário:
 
-- Depositar: Adicionar dinheiro à conta.
-- Sacar: Retirar dinheiro da conta, respeitando o limite de saldo, limite de saque e o número máximo de saques diários.
-- Extrato: Visualizar o histórico de transações e o saldo atual.
-- Nova conta: Criar uma nova conta bancária.
-- Listar contas: Listar todas as contas existentes.
-- Novo usuário: Criar um novo usuário.
-- Sair: Encerrar o uso do caixa eletrônico.
+- Cadastro de Clientes: Permite cadastrar novos clientes informando nome, CPF, data de nascimento e endereço.
+
+- Abertura de Contas: Clientes podem abrir novas contas correntes associadas ao seu cadastro.
+
+- Depósitos: Realização de depósitos em uma conta corrente específica.
+
+- Saques: Realização de saques, considerando limites de saque e saldo disponível na conta.
+
+- Extrato: Exibição do extrato da conta corrente, mostrando todas as transações realizadas.
